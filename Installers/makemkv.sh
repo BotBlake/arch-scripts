@@ -6,7 +6,7 @@ read -p "Build MakeMKV + custom FFmpeg? (y/n): " ans
 
 # Dependencies
 sudo pacman -S --needed base-devel openssl expat qt5-base zlib nasm \
-  gcc-libs ffmpeg libx264 libx265 libvpx opus
+  gcc-libs ffmpeg x264 x265 libvpx opus
 
 # Optional: libfdk_aac is nonfree — need ffmpeg compiled with it
 # So skip system ffmpeg and compile custom below
