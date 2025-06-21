@@ -15,6 +15,7 @@ sudo pacman -S --needed base-devel openssl expat qt5-base zlib nasm \
 TMP=$(mktemp -d)
 cd "$TMP"
 
+echo "Building ffmpeg..."
 # Build FFmpeg with extended codecs
 FFMPEG_VERSION=7.0
 curl -LO https://ffmpeg.org/releases/ffmpeg-${FFMPEG_VERSION}.tar.bz2
@@ -28,6 +29,7 @@ make -j"$(nproc)"
 make install
 cd ..
 
+echo "Building Makemkv..."
 # Build MakeMKV OSS + Binary
 VERSION=1.18.1
 curl -LO https://www.makemkv.com/download/makemkv-oss-${VERSION}.tar.gz
