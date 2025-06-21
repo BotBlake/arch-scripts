@@ -17,7 +17,7 @@ cd "$TMP"
 
 echo "Building ffmpeg..."
 # Build FFmpeg with extended codecs
-FFMPEG_VERSION=7.0
+FFMPEG_VERSION=7.1.1
 curl -LO https://ffmpeg.org/releases/ffmpeg-${FFMPEG_VERSION}.tar.bz2
 tar -xjf ffmpeg-${FFMPEG_VERSION}.tar.bz2
 cd ffmpeg-${FFMPEG_VERSION}
