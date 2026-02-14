@@ -31,7 +31,7 @@ cd ..
 
 echo "Building Makemkv..."
 # Build MakeMKV OSS + Binary
-VERSION=1.18.2
+VERSION=1.18.3
 curl -LO https://www.makemkv.com/download/makemkv-oss-${VERSION}.tar.gz
 curl -LO https://www.makemkv.com/download/makemkv-bin-${VERSION}.tar.gz
 tar xf makemkv-oss-${VERSION}.tar.gz
