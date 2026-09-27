@@ -17,7 +17,7 @@ cd "$TMP"
 
 echo "Building ffmpeg..."
 # Build FFmpeg with extended codecs
-FFMPEG_VERSION=8.0.1
+FFMPEG_VERSION=9.0.2
 curl -LO https://ffmpeg.org/releases/ffmpeg-${FFMPEG_VERSION}.tar.bz2
 tar -xjf ffmpeg-${FFMPEG_VERSION}.tar.bz2
 cd ffmpeg-${FFMPEG_VERSION}
@@ -31,7 +31,7 @@ cd ..
 
 echo "Building Makemkv..."
 # Build MakeMKV OSS + Binary
-VERSION=1.18.3
+VERSION=2.0.0
 curl -LO https://www.makemkv.com/download/makemkv-oss-${VERSION}.tar.gz
 curl -LO https://www.makemkv.com/download/makemkv-bin-${VERSION}.tar.gz
 tar xf makemkv-oss-${VERSION}.tar.gz
